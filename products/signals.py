@@ -20,5 +20,5 @@ def notify_admin(sender, instance, created, **kwargs):
 
         response = requests.post(
             url=f'https://api.telegram.org/bot{token}/{method}',
-            data={'chat_id': 992511540, 'text': message_text}
+            data={'chat_id': 6823041527, 'text': message_text}
         ).json()

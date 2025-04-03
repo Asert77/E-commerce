@@ -156,9 +156,6 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES':
                   [
                       'rest_framework_simplejwt.authentication.JWTAuthentication',
-                      'rest_framework.authentication.BasicAuthentication',
-                      'rest_framework.authentication.SessionAuthentication',
-
                   ]}
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME':timedelta(minutes=120),
@@ -174,7 +171,7 @@ DJOSER = {
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
     'USER_DELETE_METHODS': ['DELETE'],
-    'SERIALIZERS': {},
+    'SERIALIZERS': {'user_delete': 'djoser.serializers.UserDeleteSerializer', },
 }
 
 
