@@ -14,4 +14,4 @@ router.register(r'order', OrderViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('admin/replenish_stock/<int:product_id>/<int:amount>', admin_replenish_stock, name='admin_replenish_stock'),]
+    path('admin/replenish_stock/<int:product_id>/<int:amount>', admin_replenish_stock, name='admin_replenish_stock')]
