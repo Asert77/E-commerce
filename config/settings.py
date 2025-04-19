@@ -70,7 +70,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://51.20.10.39:8000/",
-    "http://localhost:8000"
+    "http://localhost:8000",
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -153,7 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 REST_FRAMEWORK = {'DEFAULT_PAGINATION_CLASS': "rest_framework.pagination.PageNumberPagination",
-                  'PAGE_SIZE': 2 }
+                  'PAGE_SIZE': 3 }
 
 
 REST_FRAMEWORK = {
