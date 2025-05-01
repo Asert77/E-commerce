@@ -1,6 +1,5 @@
 # E-commerce
 online shop
-# E_commerce
 Bu loyiha Django asosida qurilgan online do‘kon platformasidir.
 
 ## Texnologiyalar
