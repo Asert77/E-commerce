@@ -71,7 +71,13 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://51.20.10.39:8000",
     "http://localhost:8000",
+    "http://localhost:3000"
+    "http://localhost:3001"
 ]
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'config.urls'
 
