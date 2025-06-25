@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["51.20.10.39"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -68,10 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://51.20.10.39:8000",
-    "http://localhost:8000",
-]
+CORS_ALLOWED_ORIGINS = True
 
 ROOT_URLCONF = 'config.urls'
 
